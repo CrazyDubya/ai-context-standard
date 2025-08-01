@@ -1,0 +1,29 @@
+---
+version: "1.0"
+applies_to: ["*.py", "*.js", "*.ts"]
+---
+
+# Example Project
+
+## Overview
+This is an example project demonstrating the AI Context Standard CLI tool.
+
+## Architecture
+The project follows a simple modular architecture:
+- `aicontext.py` - Main CLI tool implementation
+- `setup.py` - Installation configuration
+- `examples/` - Example .aicontext files
+
+## Coding Standards
+- Use type hints for all Python functions
+- Follow PEP 8 style guidelines
+- Include docstrings for all public functions
+- Use meaningful variable names
+
+## Dependencies
+- PyYAML for YAML parsing
+- markdown for Markdown processing
+- Python 3.7+ required
+
+## Context Hints
+This tool is designed to work alongside existing AI tools without requiring changes to existing .aicontext files.
