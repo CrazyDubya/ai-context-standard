@@ -135,6 +135,44 @@ The specification covers:
 ### Current Support
 - 🏗️ **Reference Implementation** - Basic parser and validator
 - 🔧 **VS Code Extension** - Syntax highlighting and validation
+- 🖥️ **CLI Tool** - `aicontext` command-line tool for dynamic command discovery
+
+### CLI Tool
+
+The included `aicontext` CLI tool allows LLMs and developers to easily access context from `.aicontext` files:
+
+```bash
+# Install the CLI tool
+./install.sh
+
+# List available commands (auto-discovered from your .aicontext files)
+aicontext --list-commands
+
+# Get architecture information
+aicontext architecture
+aicontext --architecture
+
+# Get coding standards
+aicontext coding-standards
+
+# Get full context
+aicontext full
+
+# Target specific files
+aicontext --file src/components/Button.tsx architecture
+
+# Output in JSON for tool integration
+aicontext --format json architecture
+```
+
+**Key Features:**
+- 🔍 Auto-discovers commands from your `.aicontext` file sections
+- ⚡ Supports both `--flag` and `flag` syntax
+- 🏗️ Properly resolves hierarchical context
+- 📄 Multiple output formats (text, JSON, YAML)
+- 🎯 File-specific context resolution
+
+See [CLI_README.md](./CLI_README.md) for complete documentation.
 
 ### Planned Support
 For now, only for vCode-IDE 
