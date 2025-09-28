@@ -1,0 +1,10 @@
+LICENSE
+README.md
+aicontext.py
+setup.py
+aicontext_cli.egg-info/PKG-INFO
+aicontext_cli.egg-info/SOURCES.txt
+aicontext_cli.egg-info/dependency_links.txt
+aicontext_cli.egg-info/entry_points.txt
+aicontext_cli.egg-info/requires.txt
+aicontext_cli.egg-info/top_level.txt

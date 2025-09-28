@@ -1,0 +1,29 @@
+---
+version: "1.0"
+extends: ["../.aicontext"]
+applies_to: ["*.tsx", "*.jsx", "*.ts", "*.js"]
+---
+
+# Frontend Components
+
+## Architecture
+React-based component architecture with TypeScript:
+- Components use functional style with hooks
+- Shared components in `/components`
+- Page-specific components co-located
+
+## Coding Standards
+- Always export prop interfaces
+- Use PascalCase for component names
+- Include JSDoc for complex props
+- Prefer composition over inheritance
+
+## Testing Strategy
+- Unit tests with Jest and React Testing Library
+- Integration tests for complex user flows
+- Snapshot tests for UI regression prevention
+
+## Performance Guidelines
+- Lazy load components when possible
+- Use React.memo for expensive renders
+- Optimize bundle size with tree shaking

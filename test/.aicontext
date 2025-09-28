@@ -1,0 +1,16 @@
+---
+version: "1.0"
+applies_to: ["*.py"]
+---
+
+# Python Files
+
+## Coding Standards
+Python-specific coding standards:
+- Use Black for formatting
+- Follow PEP 8
+- Type hints required
+
+## Testing
+- Use pytest for testing
+- 90% coverage minimum

@@ -1,3 +1,22 @@
+Metadata-Version: 2.1
+Name: aicontext-cli
+Version: 1.0.0
+Summary: CLI tool for working with .aicontext files
+Author: AI Context Standard Community
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # AI Context Standard
 
 > A human-readable, hierarchical standard for providing context to AI coding assistants
@@ -135,44 +154,6 @@ The specification covers:
 ### Current Support
 - 🏗️ **Reference Implementation** - Basic parser and validator
 - 🔧 **VS Code Extension** - Syntax highlighting and validation
-- 🖥️ **CLI Tool** - `aicontext` command-line tool for dynamic command discovery
-
-### CLI Tool
-
-The included `aicontext` CLI tool allows LLMs and developers to easily access context from `.aicontext` files:
-
-```bash
-# Install the CLI tool
-./install.sh
-
-# List available commands (auto-discovered from your .aicontext files)
-aicontext --list-commands
-
-# Get architecture information
-aicontext architecture
-aicontext --architecture
-
-# Get coding standards
-aicontext coding-standards
-
-# Get full context
-aicontext full
-
-# Target specific files
-aicontext --file src/components/Button.tsx architecture
-
-# Output in JSON for tool integration
-aicontext --format json architecture
-```
-
-**Key Features:**
-- 🔍 Auto-discovers commands from your `.aicontext` file sections
-- ⚡ Supports both `--flag` and `flag` syntax
-- 🏗️ Properly resolves hierarchical context
-- 📄 Multiple output formats (text, JSON, YAML)
-- 🎯 File-specific context resolution
-
-See [CLI_README.md](./CLI_README.md) for complete documentation.
 
 ### Planned Support
 For now, only for vCode-IDE 
